@@ -2,7 +2,11 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+<<<<<<< HEAD
       <module fileurl="file://$PROJECT_DIR$/.idea/zmk-config-Singularity.iml" filepath="$PROJECT_DIR$/.idea/zmk-config-Singularity.iml" />
+=======
+      <module fileurl="file://$PROJECT_DIR$/.idea/Wireless-60-Sagittarius.iml" filepath="$PROJECT_DIR$/.idea/Wireless-60-Sagittarius.iml" />
+>>>>>>> bc29aa793ad551e139532069f0f969268f8be37b
     </modules>
   </component>
 </project>
