@@ -1,18 +1,5 @@
-<<<<<<< HEAD
 config SHIELD_SINGULARITY_LEFT
     def_bool $(shield_list_contain,Singularity_left)
 
 config SHIELD_SINGULARITY_RIGHT
     def_bool $(shield_list_contain,Singularity_right)
-=======
-config SHIELD_SINGULARITY
-    bool
-
-config SHIELD_SINGULARITY_LEFT
-    def_bool $(shield_list_contain,Singularity_left)
-    select SHIELD_SINGULARITY
-
-config SHIELD_SINGULARITY_RIGHT
-    def_bool $(shield_list_contain,Singularity_right)
-    select SHIELD_SINGULARITY
->>>>>>> bc29aa793ad551e139532069f0f969268f8be37b
