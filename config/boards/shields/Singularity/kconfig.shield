@@ -2,9 +2,9 @@ config SHIELD_SINGULARITY
     bool
 
 config SHIELD_SINGULARITY_LEFT
-    def_bool $(shield_list_contain,Singularity_L)
+    def_bool $(shield_list_contain,Singularity_left)
     select SHIELD_SINGULARITY
 
 config SHIELD_SINGULARITY_RIGHT
-    def_bool $(shield_list_contain,Singularity_R)
+    def_bool $(shield_list_contain,Singularity_right)
     select SHIELD_SINGULARITY

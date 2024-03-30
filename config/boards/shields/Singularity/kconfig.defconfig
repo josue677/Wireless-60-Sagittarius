@@ -1,7 +1,7 @@
 if SHIELD_SINGULARITY_LEFT
 
 config ZMK_KEYBOARD_NAME
-    default "Singularity_L"
+    default "Singularity"
 
 config ZMK_SPLIT_ROLE_CENTRAL
     default y
