@@ -19,6 +19,6 @@
 ---
 include:
   - board: nice_nano_v2
-    shield: Singularity_left
+    shield: corn_left
   - board: nice_nano_v2
-    shield: Singularity_right
+    shield: corn_right

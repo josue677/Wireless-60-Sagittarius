@@ -16,4 +16,3 @@
         , <&gpio0 24 GPIO_ACTIVE_HIGH>  // col1 in the schematic
         ;
 };
-[
