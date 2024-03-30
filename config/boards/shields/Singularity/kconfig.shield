@@ -1,5 +1,10 @@
+config SHIELD_SINGULARITY
+    bool
+
 config SHIELD_SINGULARITY_LEFT
     def_bool $(shield_list_contain,Singularity_L)
+    select SHIELD_SINGULARITY
 
 config SHIELD_SINGULARITY_RIGHT
     def_bool $(shield_list_contain,Singularity_R)
+    select SHIELD_SINGULARITY
