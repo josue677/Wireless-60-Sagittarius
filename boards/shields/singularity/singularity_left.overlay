@@ -1,4 +1,4 @@
-#include "Singularity.overlay" // Notice that the main dtsi files are included in the overlay.
+#include "singularity.overlay" // Notice that the main dtsi files are included in the overlay.
 
 &kscan0 {
     col-gpios
