@@ -1,6 +1,6 @@
 #include "singularity.overlay" // Notice that the main .overlay files are included in the overlay.
 
-kscan0: kscan {
+&kscan {
 
     compatible = "zmk,kscan-gpio-matrix";
     diode-direction = "col2row";
