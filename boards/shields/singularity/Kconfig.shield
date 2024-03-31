@@ -1,5 +1,5 @@
 config SHIELD_SINGULARITY_LEFT
-    def_bool $(shield_list_contain,singularity_left)
+    def_bool $(shields_list_contains,singularity_left)
 
 config SHIELD_SINGULARITY_RIGHT
-    def_bool $(shield_list_contain,singularity_right)
+    def_bool $(shields_list_contains,singularity_right)
