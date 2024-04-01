@@ -5,8 +5,8 @@
 
 // Makes layers and sets them to a num value.
 #define DEFAULT 0
-#define LOWER   1
-#define RAISE   2
+#define RAISE   1
+#define LOWER   2
 
 // Enables keymap config and defines the keymap.
 / {
@@ -16,18 +16,16 @@
         default_layer {
 
 // -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-//
 // | PAGE UP |   ESC   |    Q    |    W    |    E    |    R    |    T    |                                          |    Y    |    U    |    I    |    O    |    P    |  LBRCT  |  RBRCT |  BSPACE |
 // | PAGE DN |   TAB   |    A    |    S    |    D    |    F    |    G    |                                          |    H    |    J    |    K    |    L    |    ;    |    '    |  ENTER |
 // | DELETE  |  SHIFT  |    Z    |    X    |    C    |    V    |    B    |                                          |    N    |    M    |    ,    |    .    |    /    |  R CTRL | R SHIFT | MO LOWER |
 //       | L CTRL  |   GUI   |                       |  L ALT  |  SPACE  |                                          |  SPACE |                    |  R CTRL | MO RISE |  R ALT  |
-//
 // -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
             bindings = <
-    &kp PG_UP   &kp ESC    &kp Q    &kp W    &kp E     &kp R     &kp T                  &kp Y    &kp U     &kp I     &kp O     &kp P     &kp LBKT   &kp RBKT  &kp BSPC
-    &kp PG_DN   &kp TAB    &kp A    &kp S    &kp D     &kp F     &kp G                  &kp H    &kp J     &kp K     &kp L     &kp SEMI  &kp SQT    &kp RET   &none
-    &kp DEL     &kp LSHIFT &kp Z    &kp X    &kp C     &kp V     &bt B                  &kp N    &kp M     &kp COMMA &kp DOT   &kp FSLH  &kp RSHIFT &mo LOWER &none
-    &kp LCTRL   &kp LGUI   &kp LALT &none    &none     &none     &kp SPACE              &none    &kp SPACE &none     &kp RCTRL &none     &mo RAISE  &none     &kp RALT
+                &kp PG_UP   &kp ESC    &kp Q    &kp W    &kp E     &kp R     &kp T                  &kp Y    &kp U     &kp I     &kp O     &kp P     &kp LBKT   &kp RBKT  &kp BSPC
+                &kp PG_DN   &kp TAB    &kp A    &kp S    &kp D     &kp F     &kp G                  &kp H    &kp J     &kp K     &kp L     &kp SEMI  &kp SQT    &kp RET   &none
+                &kp DEL     &kp LSHIFT &kp Z    &kp X    &kp C     &kp V     &bt B                  &kp N    &kp M     &kp COMMA &kp DOT   &kp FSLH  &kp RSHIFT &mo LOWER &none
+                &kp LCTRL   &kp LGUI   &kp LALT &none    &none     &none     &kp SPACE              &none    &kp SPACE &none     &kp RCTRL &none     &mo RAISE  &none     &kp RALT
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
@@ -36,18 +34,16 @@
         lower_layer {
 
 // -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-//
 // | PAGE UP |   ESC   |    Q    |    W    |    E    |    R    |    T    |                                          |    Y    |    U    |    I    |    O    |    P    |  LBRCT  |  RBRCT |  BSPACE |
 // | PAGE DN |   TAB   |    A    |    S    |    D    |    F    |    G    |                                          |    H    |    J    |    K    |    L    |    ;    |    '    |  ENTER |
 // | DELETE  |  SHIFT  |    Z    |    X    |    C    |    V    |    B    |                                          |    N    |    M    |    ,    |    .    |    /    |  R CTRL | R SHIFT | MO LOWER |
 //       | L CTRL  |   GUI   |                       |  L ALT  |  SPACE  |                                          |  SPACE |                    |  R CTRL | MO RISE |  R ALT  |
-//
 // -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
             bindings = <
-    &kp PG_UP   &kp ESC    &kp N1   &kp N2   &kp N3    &kp N4    &kp N5                 &kp N6   &kp N7    &kp N8    &kp N9    &kp N0    &kp LBKT   &kp RBKT  &kp BSPC
-    &kp PG_DN   &kp TAB    &kp F1   &kp F2   &kp F3    &kp F4    &kp F5                 &kp F6   &kp F7    &kp F8    &kp F9    &kp F10   &kp F11    &kp F12   &none
-    &kp DEL     &kp LSHIFT &kp Z    &kp X    &kp C     &kp V     &bt BT_CLR_ALL         &kp N    &kp M     &kp COMMA &kp DOT   &kp FSLH  &kp RSHIFT &mo LOWER &none
-    &kp LCTRL &kp LGUI   &kp LALT &none    &none     &none     &kp SPACE              &none    &kp SPACE &none     &kp RCTRL &none     &mo RAISE  &none     &kp RALT
+                &kp PG_UP   &kp ESC    &kp N1   &kp N2   &kp N3    &kp N4    &kp N5                 &kp N6   &kp N7    &kp N8    &kp N9    &kp N0    &kp LBKT   &kp RBKT  &kp BSPC
+                &kp PG_DN   &kp TAB    &kp F1   &kp F2   &kp F3    &kp F4    &kp F5                 &kp F6   &kp F7    &kp F8    &kp F9    &kp F10   &kp F11    &kp F12   &none
+                &kp DEL     &kp LSHIFT &kp Z    &kp X    &kp C     &kp V     &bt BT_CLR_ALL         &kp N    &kp M     &kp COMMA &kp DOT   &kp FSLH  &kp RSHIFT &mo LOWER &none
+                &kp LCTRL &kp LGUI   &kp LALT &none    &none     &none     &kp SPACE              &none    &kp SPACE &none     &kp RCTRL &none     &mo RAISE  &none     &kp RALT
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
@@ -56,18 +52,16 @@
         rise_layer {
 
 // -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-//
 // | PAGE UP |   ESC   |    Q    |    W    |    E    |    R    |    T    |                                          |    Y    |    U    |    I    |    O    |    P    |  LBRCT  |  RBRCT |  BSPACE |
 // | PAGE DN |   TAB   |    A    |    S    |    D    |    F    |    G    |                                          |    H    |    J    |    K    |    L    |    ;    |    '    |  ENTER |
 // | DELETE  |  SHIFT  |    Z    |    X    |    C    |    V    |    B    |                                          |    N    |    M    |    ,    |    .    |    /    |  R CTRL | R SHIFT | MO LOWER |
 //       | L CTRL  |   GUI   |                       |  L ALT  |  SPACE  |                                          |  SPACE |                    |  R CTRL | MO RISE |  R ALT  |
-//
 // -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
             bindings = <
-    &kp PSCRN   &kp ESC    &kp N1   &kp UP   &kp N3    &kp N4    &kp N5                 &kp N6   &kp N7    &kp N8    &kp N9    &kp N0    &kp LBKT   &kp RBKT  &kp BSPC
-    &kp PG_DN   &kp TAB    &kp LEFT &kp DOWN &kp RIGHT &kp F4    &kp F5                 &kp F6   &kp F7    &kp F8    &kp F9    &kp F10   &kp F11    &kp F12   &none
-    &kp DEL     &kp LSHIFT &kp Z    &kp X    &kp C     &kp V     &bt BT_CLR_ALL         &kp N    &kp M     &kp COMMA &kp DOT   &kp FSLH  &kp RSHIFT &mo LOWER &none
-    &kp LCTRL &kp LGUI   &kp LALT &none    &none     &none     &kp SPACE              &none    &kp SPACE &none     &kp RCTRL &none     &mo RAISE  &none     &kp RALT
+                &kp PSCRN   &kp ESC    &kp N1   &kp UP   &kp N3    &kp N4    &kp N5                 &kp N6   &kp N7    &kp N8    &kp N9    &kp N0    &kp LBKT   &kp RBKT  &kp BSPC
+                &kp PG_DN   &kp TAB    &kp LEFT &kp DOWN &kp RIGHT &kp F4    &kp F5                 &kp F6   &kp F7    &kp F8    &kp F9    &kp F10   &kp F11    &kp F12   &none
+                &kp DEL     &kp LSHIFT &kp Z    &kp X    &kp C     &kp V     &bt BT_CLR_ALL         &kp N    &kp M     &kp COMMA &kp DOT   &kp FSLH  &kp RSHIFT &mo LOWER &none
+                &kp LCTRL   &kp LGUI   &kp LALT &none    &none     &none     &kp SPACE              &none    &kp SPACE &none     &kp RCTRL &none     &mo RAISE  &none     &kp RALT
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
