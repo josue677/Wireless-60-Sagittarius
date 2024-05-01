@@ -47,7 +47,7 @@
             bindings = <
     &kp PAGE_UP   &kp ESC    &kp N1   &kp N2   &kp N3    &kp N4    &kp N5                 &kp N6   &kp N7    &kp N8    &kp N9    &kp N0    &kp LBKT   &kp RBKT  &kp BSPC
     &kp PAGE_DOWN   &kp TAB    &kp F1   &kp F2   &kp F3    &kp F4    &kp F5                 &kp F6   &kp F7    &kp F8    &kp F9    &kp F10   &kp F11    &kp F12   &none
-    &kp DEL     &kp LSHIFT &kp Z    &kp X    &kp C     &kp V     &bt BT_CLR_ALL         &kp N    &kp M     &kp COMMA &kp DOT   &kp FSLH  &kp RSHIFT &mo LOWER &none
+    &kp DEL     &kp LSHIFT &kp Z    &kp X    &kp C     &kp V     &bt BT_CLR_ALL         &none &kp N    &kp M     &kp COMMA &kp DOT   &kp FSLH  &kp RSHIFT &mo LOWER &none
     &kp LCTRL &kp LGUI   &kp LALT &none    &none     &none     &kp SPACE              &none    &kp SPACE &none     &kp RCTRL &none     &mo RAISE  &none     &kp RALT
             >;
         };
